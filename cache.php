@@ -1,3 +1,4 @@
+<?php
 class 1filecache {
 $filecachepath = "$dirname/" . md5($_SERVER['REQUEST_URI']). ".cachefile";
     function loadCache($dirname, $seconds) {
