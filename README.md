@@ -1,2 +1,20 @@
 # 1filecache
 1 file php caching system for all of your projects
+
+It's very simple (and possibly broken)
+
+```
+// this should be at the top of your script (well, at least before any output is displayed to the user)
+require 'cache.php';
+$dirname = "./cache"; // folder where the cache is stored
+$cachetime = 900; // How long the cache should store stuff (in seconds)
+$cache = new 1filecache(); // load the cache file
+$cache->loadCache($dirname, $cachetime)
+// place your script here
+// before the script ends
+$cache->saveCache($dirname)
+```
+
+It should work in PHP 5, however, was tested on PHP 7
+
+This is really the first time I've released code for PHP, so it's most likely broken.
