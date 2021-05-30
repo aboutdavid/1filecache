@@ -3,7 +3,7 @@
 
 It's very simple (and possibly broken)
 
-```
+```php
 // this should be at the top of your script (well, at least before any output is displayed to the user)
 require 'cache.php';
 $dirname = "./cache"; // folder where the cache is stored
